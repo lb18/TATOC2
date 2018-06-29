@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14753" started-at="2018-06-27T03:59:17Z" finished-at="2018-06-27T03:59:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14753" started-at="2018-06-27T03:59:17Z" finished-at="2018-06-27T03:59:32Z">
+      <class name="test.TestTatoc">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.TestTatoc@59e5ddf]" name="init" is-config="true" duration-ms="6835" started-at="2018-06-27T03:59:17Z" finished-at="2018-06-27T03:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="basic_Course_Button_Should_Click()[pri:0, instance:test.TestTatoc@59e5ddf]" name="basic_Course_Button_Should_Click" duration-ms="206" started-at="2018-06-27T03:59:24Z" finished-at="2018-06-27T03:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basic_Course_Button_Should_Click -->
+        <test-method status="PASS" signature="red_Box_Click_Should_Display_Error_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="red_Box_Click_Should_Display_Error_Page" duration-ms="121" started-at="2018-06-27T03:59:24Z" depends-on-methods="test.TestTatoc.basic_Course_Button_Should_Click" finished-at="2018-06-27T03:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- red_Box_Click_Should_Display_Error_Page -->
+        <test-method status="PASS" signature="green_Box_Click_Should_Proceed_to_Next_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="green_Box_Click_Should_Proceed_to_Next_Page" duration-ms="450" started-at="2018-06-27T03:59:24Z" depends-on-methods="test.TestTatoc.basic_Course_Button_Should_Click, test.TestTatoc.red_Box_Click_Should_Display_Error_Page" finished-at="2018-06-27T03:59:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- green_Box_Click_Should_Proceed_to_Next_Page -->
+        <test-method status="PASS" signature="box_Colors_Does_Not_Match_Should_Display_Error_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="box_Colors_Does_Not_Match_Should_Display_Error_Page" duration-ms="298" started-at="2018-06-27T03:59:25Z" depends-on-methods="test.TestTatoc.green_Box_Click_Should_Proceed_to_Next_Page" finished-at="2018-06-27T03:59:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- box_Colors_Does_Not_Match_Should_Display_Error_Page -->
+        <test-method status="PASS" signature="box_Colors_Do_Match_Should_Go_To_Next_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="box_Colors_Do_Match_Should_Go_To_Next_Page" duration-ms="2191" started-at="2018-06-27T03:59:25Z" depends-on-methods="test.TestTatoc.green_Box_Click_Should_Proceed_to_Next_Page, test.TestTatoc.box_Colors_Does_Not_Match_Should_Display_Error_Page" finished-at="2018-06-27T03:59:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- box_Colors_Do_Match_Should_Go_To_Next_Page -->
+        <test-method status="PASS" signature="dropbox_Does_Not_Contain_Dragbox_Should_Display_Error_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="dropbox_Does_Not_Contain_Dragbox_Should_Display_Error_Page" duration-ms="134" started-at="2018-06-27T03:59:27Z" depends-on-methods="test.TestTatoc.box_Colors_Do_Match_Should_Go_To_Next_Page" finished-at="2018-06-27T03:59:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropbox_Does_Not_Contain_Dragbox_Should_Display_Error_Page -->
+        <test-method status="PASS" signature="dropbox_Contains_Dragbox_Should_Go_To_Next_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="dropbox_Contains_Dragbox_Should_Go_To_Next_Page" duration-ms="299" started-at="2018-06-27T03:59:28Z" depends-on-methods="test.TestTatoc.box_Colors_Do_Match_Should_Go_To_Next_Page, test.TestTatoc.dropbox_Does_Not_Contain_Dragbox_Should_Display_Error_Page" finished-at="2018-06-27T03:59:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropbox_Contains_Dragbox_Should_Go_To_Next_Page -->
+        <test-method status="PASS" signature="empty_Text_Field_Should_Display_Error_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="empty_Text_Field_Should_Display_Error_Page" duration-ms="1547" started-at="2018-06-27T03:59:28Z" depends-on-methods="test.TestTatoc.dropbox_Contains_Dragbox_Should_Go_To_Next_Page" finished-at="2018-06-27T03:59:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empty_Text_Field_Should_Display_Error_Page -->
+        <test-method status="PASS" signature="text_Field_Contains_Some_Text_Should_Go_To_Next_Paage()[pri:0, instance:test.TestTatoc@59e5ddf]" name="text_Field_Contains_Some_Text_Should_Go_To_Next_Paage" duration-ms="1599" started-at="2018-06-27T03:59:29Z" depends-on-methods="test.TestTatoc.dropbox_Contains_Dragbox_Should_Go_To_Next_Page, test.TestTatoc.empty_Text_Field_Should_Display_Error_Page" finished-at="2018-06-27T03:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- text_Field_Contains_Some_Text_Should_Go_To_Next_Paage -->
+        <test-method status="PASS" signature="token_Not_Generated_Should_Display_Error_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="token_Not_Generated_Should_Display_Error_Page" duration-ms="150" started-at="2018-06-27T03:59:31Z" depends-on-methods="test.TestTatoc.text_Field_Contains_Some_Text_Should_Go_To_Next_Paage" finished-at="2018-06-27T03:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- token_Not_Generated_Should_Display_Error_Page -->
+        <test-method status="PASS" signature="token_Generated_Should_Go_To_Next_Page()[pri:0, instance:test.TestTatoc@59e5ddf]" name="token_Generated_Should_Go_To_Next_Page" duration-ms="249" started-at="2018-06-27T03:59:31Z" depends-on-methods="test.TestTatoc.token_Not_Generated_Should_Display_Error_Page, test.TestTatoc.text_Field_Contains_Some_Text_Should_Go_To_Next_Paage" finished-at="2018-06-27T03:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- token_Generated_Should_Go_To_Next_Page -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.TestTatoc@59e5ddf]" name="closeBrowser" is-config="true" duration-ms="630" started-at="2018-06-27T03:59:31Z" finished-at="2018-06-27T03:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.TestTatoc -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
